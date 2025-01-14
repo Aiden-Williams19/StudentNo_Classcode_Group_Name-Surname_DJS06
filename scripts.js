@@ -13,3 +13,18 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+// Basic Exercises
+
+// 1. ForEach Basics
+names.forEach(name => console.log(name));
+provinces.forEach(province => console.log(province));
+names.forEach((name, index) => console.log(`${name} (${provinces[index]})`));
+
+// 2. Uppercase Transformation
+const upperCaseProvinces = provinces.map(province => province.toUpperCase());
+console.log(upperCaseProvinces);
+
+// 3. Name Lengths
+const nameLengths = names.map(name => name.length);
+console.log(nameLengths);
